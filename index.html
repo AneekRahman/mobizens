@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title></title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="loader.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/fb6f11a9d8.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Poppins:300,400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800,900&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        
+        <div id="mainHolder">
+            
+            <div id="navHolder">
+            
+                <h1 id="logo"> mobizens. </h1>
+                
+                <div id="nav">
+                
+                    <h1>New Arrivals</h1>
+                    
+                    <h1>Women</h1>
+                    
+                    <h1>Men</h1>
+                    
+                    <h1>Shoes</h1>
+                    
+                    <h1>Handbags</h1>
+                    
+                    <h1>Stories</h1>
+                
+                </div>
+            
+            </div>
+
+            <div id="holder1">
+                
+                <div id="rightBtn"><i class="fas fa-chevron-right"></i></div>
+                
+                <div id="shower" style="background-image: url(https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+                    
+                    <div id="plus"><i class="fas fa-plus"></i></div>
+                
+                </div>
+                
+                <div id="moreRight">
+                
+                    <div style="background-image: url(https://images.pexels.com/photos/1070030/pexels-photo-1070030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/2703514/pexels-photo-2703514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/1408183/pexels-photo-1408183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/1070030/pexels-photo-1070030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/2703514/pexels-photo-2703514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/1408183/pexels-photo-1408183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/764529/pexels-photo-764529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                    <div style="background-image: url(https://images.pexels.com/photos/2106685/pexels-photo-2106685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+                    
+                </div>
+                
+                <div id="optionsHolder">
+                    
+                    <input type="text" placeholder="search" />
+                    
+                    <img src="icons/search.svg" width="19px" height="19px"/>
+                
+                    <img src="icons/bag.svg" width="20px" height="20px"/>
+                    
+                    <img src="icons/avatar.svg" width="20px" height="20px"/>
+                
+                
+                </div>
+                
+                <div id="text">
+                
+                    <h4>Quote here</h4>
+                    <p>Check it out now</p>
+                
+                </div>
+                
+            </div>
+            
+            <div id="holder2">
+            
+                <div id="cat">
+                
+                    <p><span>Trends Now</span><i class="fas fa-arrow-right"></i></p>
+                    
+                    <p><span>Apparal</span><i class="fas fa-arrow-right"></i></p>
+                    
+                    <p><span>Shoes</span><i class="fas fa-arrow-right"></i></p>
+                    
+                    <p><span>Bags</span><i class="fas fa-arrow-right"></i></p>
+                    
+                    <p><span>Sale</span><i class="fas fa-arrow-right"></i></p>
+                    
+                    <p><span>More</span><i class="fas fa-arrow-right"></i></p>
+                    
+                    <input placeholder="Search">
+                                    
+                </div>
+                
+                <div id="products">
+                
+                </div>
+                
+            </div>
+        
+        </div>
+        
+        <div id="loader">
+        
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        
+        </div>
+        
+        <!-- Scripts link -->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- My JS Scripts -->
+        
+        <script>
+        
+            $(function(){
+                
+                var products = [
+                    {
+                        name : "Bowling Shirt – Red/Yellow Striped",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1024/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_cadcbe2f1e952d5a6f19b0b0b47c4f671-1024x1024.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_0b25f963f7d14e4326a593d87d998e191-300x300.jpg"
+                    },
+                    {
+                        name : "JAPANESE ONI/DEVIL SHIRT – PINK/PURPLE",
+                        price: "1500",
+                        imgURL : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_5b616fec70b899919c556bb6834cabe81-300x300.jpg",
+                        "hoverURL" : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_53b746789d59f80b7943ca85be5914e8-600x600.jpg"
+                    },
+                    {
+                        name : "Bowling Shirt – Gray/Yellow Thick Stripes",
+                        price: "1890",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_94c85da3c4ba0670ab26cce7cd3efa721-600x600.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_269c04fdb4baf4cd7c1c86311d8920501-300x300.jpg"
+                    },
+                    {
+                        name : "Tie dye shirts",
+                        price: "2100",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_bd0232cb2f75ddd72435321e449fc9611-600x600.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_3931c2f313ca94161c632a93957b91b81-300x300.jpg"
+                    },
+                    {
+                        name : "David by Michaelangelo – Shirt",
+                        price: "1490",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_c983ef414e8cb3cbbcc5c4353c441919-600x600.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_463bdc1d4bc678236762a1d1c8e7e3c61-300x300.jpg"
+                    },
+                    {
+                        name : "Hawaiian Shirt – Revolver Print",
+                        price: "1390",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_f44008b6e5947124794d8887b8eabb98-600x600.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_6961c2e2d81042ac06ca07159338b831-300x300.jpg"
+                    },
+                    {
+                        name : "CIGARETTE PRINT HAWAIIAN SHIRTS – BLACK/RED",
+                        price: "1630",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_5bd08e2b1eda191fb2d1364c00863805-1-600x600.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_f4ec58a452684e191d95cc54b81740c1-300x300.jpg"
+                    },
+                    {
+                        name : "MONSTER SUPERMARKET T-SHIRT",
+                        price: "2000",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_a70df070fc02f299741f6f485921415e1-600x600.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_fdedb97712efd95fffa7462a8aa068fa-300x300.jpg"
+                    },
+                    {
+                        name : "NEOPHYTE T-SHIRTS",
+                        price: "1390",
+                        imgURL : "https://www.blumaron.com/wp-content/uploads/2019/07/Shopee_ac6998cfe9698268d934a0c762e0c44d-600x600.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/07/Shopee_97e0c6f5be1f05a1f39b7f16ebdf6bcf-300x300.jpg"
+                    },
+                    {
+                        name : "True feeling shirt",
+                        price: "1200",
+                        imgURL : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_49c520b444283aa7e04a9c9fc0285ee2-300x300.jpg",
+                        "hoverURL" : "https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_11676c1ac6ef073dcc27f7482e54dbc1-300x300.jpg"
+                    },
+                    {
+                        name : "Leaves Print – Hawaiian Shirt",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/07/Shopee_8586abf51febe4521d4f7063c3a75505-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "TRUE FEELINGS SHIRT",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_11676c1ac6ef073dcc27f7482e54dbc1-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "Hawaiian Shirt – Tropical Print",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_adf9699c0ce64df81234172b58c9a591-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "English Floral High Neck Cape Top – Cream",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/VST1425-Cream-3-600x900.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "English Floral High Neck Cape Top – Navy Blue",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/VST1425-Navy-Blue-3-720x1080-600x900.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "AG OFF-SHOULDER HOODIES",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_075a435a7610cfe8a3c6a730254fcdcb-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "Rainbow Patch Sweatshirt with Chain",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_284595fe893bdb724ae04a9b40792ce9-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "BE T-Shirts – Various Designs",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_a1edda2cd2e26267a1f2e430c54d2c11-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "SNAKESKIN SHIRT",
+                        price: "1700",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_ad384e974f8bd52a33c03151ab169bf7-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "STREETSTYLE SHIRT – WIZ KHALIFA",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/06/Shopee_f05821e95b65bc68de8e6151c9f47570-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "SYNTH SUNRISE – T-SHIRT",
+                        price: "1500",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/07/Shopee_90eb692d462412bcdc7633c60a63b8d7-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "SYNTH SUNRISE – T-SHIRT",
+                        price: "2300",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/07/Shopee_a745e6ffa2e11740629cb4e2ff1d456d-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "80s INSPIRED NEON STRIPED T-SHIRTS",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/07/Shopee_e6acb4c30d9e8d05d90f81938f126601-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    {
+                        name : "Crane Printed Neon Shirt",
+                        price: "1200",
+                        imgURL : "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.blumaron.com/wp-content/uploads/2019/07/Shopee_ac6998cfe9698268d934a0c762e0c44d-600x600.jpg",
+                        "hoverURL" : ""
+                    },
+                    
+                    
+                ]
+                
+                var quotes = [
+                    "More Bohemian than prim and proper - Look fashionable in your own way.",
+                    "Twin and win in style with YELLOW's matching ethnic outfits!",
+                    "Designed for the independent modern woman, YELLOW’s Lawn collection personifies a sensual, sophisticated lifestyle.",
+                    "Sometimes simply having your casual look on point is all it takes to stand out.",
+                    "An ideal Panjabi for your boy's smooth traditional look.",
+                    "From basic whites to bright Orange, find Bohemian’s ethnic clothing in every color you love",
+                    "More Bohemian than prim and proper - Look fashionable in your own way.",
+                    "Twin and win in style with YELLOW's matching ethnic outfits!",
+                    "Designed for the independent modern woman, YELLOW’s Lawn collection personifies a sensual, sophisticated lifestyle.",
+                ]
+                
+                $("#text h4").text(quotes[5])
+                
+                var count = 0;
+                var moreDivs = $("#moreRight").children();
+                
+                setTimeout(function(){
+                    // Loaded animation
+                    
+                    $("#loader").css({"opacity" : "0"})
+                    $("#mainHolder").css({"opacity" : "1"})
+                    
+                    $("#shower").css("opacity", "1");
+                
+                    for(var i= 0; i < moreDivs.length; i++){
+
+                        $(moreDivs[i]).css({
+                            "transform" : "scale(1)",
+                            "transition-delay" : (i * .05) + "s"
+                        })
+
+                    }
+                    
+                }, 2000)
+                
+                
+                
+            
+                
+                $("#rightBtn").on("click", function(){
+                    
+                    $("#moreRight div").css({"transition-delay" : "0s"})
+                    
+                    var thisDiv = moreDivs[count];
+                                        
+                    $(thisDiv).css({
+                        
+                        "margin-left": "-30em",
+                        "height" : "100vh",
+                        "width" : "30em",
+                        "opacity" : "1",
+                        
+                    });
+                    
+                    $("#shower").css({
+                        
+                        "opacity" : "0",
+                        "transform" : "scale(.8)"
+                        
+                    })
+                    
+                    $("#plus").css({
+                        "opacity" : "0"
+                    }) 
+                    
+                    setTimeout(function(){
+                        
+                        var bg = $(thisDiv).css('background-image');
+                        bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+                        
+                        $("#shower").css({
+                            "transition" : "0s",
+                            "background-image" : "url(" + bg + ")",
+                            "transform" : "scale(1)",
+                            "opacity" : "1",
+                        })
+                        
+                        setTimeout(function(){
+                            
+                            $("#plus").css({
+                                "opacity" : "1"
+                            }) 
+                            
+                            $("#shower").css({
+                                "transition" : ".3s"
+                            })
+                            
+                            $(thisDiv).remove()
+                            
+                        }, 100)
+                        
+                    }, 500)
+                    
+                    $("#text").css({
+                        
+                        "opacity" : "0",
+                        "transform" : "translateX(-1em)",
+                        "transition" : ".2s"
+                        
+                    })
+                    
+                    setTimeout(function(){
+                        
+                        $("#text h4").text(quotes[count])
+                        $("#text").css({"transition" : "0s", "transform" : "translateX(1em)"})
+                        
+                        setTimeout(function(){
+                            
+                            $("#text").css({
+                        
+                                "opacity" : "0",
+                                "transform" : "translateX(0em)",
+                                "transition" : ".3s",
+                                "opacity" : "1"
+
+                            })
+                            
+                        }, 300)
+                        
+                    }, 200)
+                    
+                    
+                    count++;
+                    
+                })
+                
+                readyProducts();
+                
+                function readyProducts(){
+                        
+                    for(var i = 0; i < products.length; i++){
+
+                        var product = products[i];
+
+                        var html = '<div class="productHolder" index="' + i + '" url="' + product.imgURL + '"><div class="img" style="background-image: url(' + product.imgURL + ')"></div><div class="productText"><h1>' + product.name + '</h1><h2>৳ ' + product.price + '</h2><div class="starHolder"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div></div></div>';
+
+                        $("#products").html($("#products").html() + html);
+
+                    }
+                        
+                }
+                
+                
+                $(document.body).on("click", ".productHolder", function(){
+                    
+                    window.location = document.location.origin + "/preview.html"
+                    
+                })
+                
+                $(document.body).on('mouseenter mouseleave', '.productHolder', function (ev) {
+                    
+                    var oldURL = $(this).attr("url");
+                    var img = $(this).find(".img");
+                    
+                    if(ev.type === 'mouseenter'){
+                        
+                        var index = $(this).attr("index");
+
+                        $(img).css({"background-image" : "url(" + products[parseInt(index)].hoverURL + ")"})
+                        
+                    }
+                    
+                    if(ev.type === 'mouseleave'){
+                                                
+                        $(img).css({"background-image" : "url(" + oldURL + ")"})
+                        
+                        
+                    }
+                    
+                });
+                
+                
+                
+            })
+        
+        </script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,419 @@
+*{box-sizing: border-box}
+
+body{margin: 0;}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#mainHolder{
+    
+    opacity: 0;
+    transition: .6s
+    
+}
+
+#navHolder{
+    
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 13em;
+    padding-top: 1.5em;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#logo{
+    
+    margin: 0;
+    text-align: center;
+    font-family: good times;
+    font-size: 1em;
+    letter-spacing: 1px
+    
+}
+
+#nav{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2.8em;
+    
+}
+
+#nav h1{
+    
+    font-family: raleway;
+    font-size: .9em;
+    font-weight: 500;
+    opacity: 1;
+    transition: .2s;
+    cursor: pointer;
+    margin: 2em 0 0 0;
+    letter-spacing: -.3px
+    
+}
+
+#nav h1:hover{
+    
+    color: saddlebrown;
+    
+}
+
+#holder1{
+    
+    display: flex;
+    overflow: hidden;
+    
+}
+
+#shower{
+    
+    height: 100vh;
+    min-width: 30em;
+    background-size: cover;
+    background-position: center;
+    margin-left: 13em;
+    position: relative;
+    transition: .3s;
+    opacity: 0;
+    
+}
+
+#plus{
+    
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100em;
+    transition: .3s;
+    
+}
+
+#rightBtn{
+    
+    height: 4em;
+    width: 4em;
+    position: absolute;
+    left: 41em;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 100em;
+    display: flex;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+    margin-right: -2em;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 30
+    
+}
+
+#rightBtn:hover{
+    
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2); 
+    transform: translateY(calc(-50% - 4px));
+    
+}
+
+#rightBtn i{
+    
+    color: #000;
+    margin: auto;
+    transition: .3s;
+    
+}
+
+#moreRight{
+    
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+#moreRight div{
+    
+    background-position: center;
+    background-size: cover;
+    margin-left: 3em;
+    transition: .5s;    
+    
+}
+
+#moreRight div{
+    
+    height: 60vh;
+    width: 40vh;
+    opacity: .4;
+    transform: scale(.4);
+    z-index: 20;
+    
+}
+
+#moreRight div:nth-child(3){
+    
+    height: 60vh;
+    width: 40vh;
+    opacity: .4
+    
+    
+}
+
+#optionsHolder{
+    
+    position: absolute;
+    right: 0;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    
+}
+
+#optionsHolder input{
+    
+    border-radius: 100em;
+    border: 1px solid #eee;
+    padding: .41em 1.4em .6em 1.4em;
+    
+}
+
+#optionsHolder input::placeholder{
+    
+    color: #d1d1d1
+    
+}
+
+#optionsHolder img{
+    
+    margin-left: 2em;
+    
+}
+
+#text{
+    
+    position: absolute;
+    bottom: 2.5em;
+    left: calc(46em);
+    padding-right: 6em;
+    
+}
+
+#text h4{
+    
+    font-family: raleway;
+    font-size: 1em;
+    margin: 0;
+    font-weight: 100;
+    cursor: pointer;
+    transition: .2s
+    
+}
+
+#text p{
+    
+    font-family: raleway;
+    font-size: .9em;
+    margin: .6em 0 0;
+    font-weight: 100;
+    color: rgba(0,0,0,0.4);
+    transition: .2s
+    
+}
+
+#text:hover h4{
+    
+    color: #4db2ff
+    
+}
+
+#text:hover p{
+    
+    color: #4db2ff
+    
+}
+
+#holder2{
+    
+    margin-left: 13em;
+    
+}
+
+#cat{
+    
+    display: flex;
+    margin-top: 2em;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding: 1em 0;
+    background-color: #fff;
+    
+}
+
+#cat p{
+    
+    margin: 0;
+    font-family: raleway;
+    margin-right: 1em;
+    padding: .8em 2em;
+    border: 1px solid rgba(0,0,0,0.03);
+    border-radius: .3em;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+#cat p span{
+    
+    display: inline-block;
+    transition: .3s;
+    
+}
+
+#cat p i{
+    
+    opacity: 0;
+    position: absolute;
+    transition: .3s;
+    margin-left: .2em;
+    top: 50%;
+    transform: translateY(-50%)
+    
+}
+
+#cat p:hover{
+    
+    background-color: rgba(0,0,0,0.01);
+    
+}
+
+#cat p:hover i{
+    
+    opacity: 1;
+    transform: translateX(-.2em) translateY(-50%)
+    
+}
+
+#cat p:hover span{
+    
+    transform: translateX(-.55em)
+    
+}
+
+#cat input{
+    
+    margin: 0;
+    font-family: raleway;
+    font-weight: 100;
+    padding: .6em;
+    border: none;
+    border-bottom: 1px solid #000;
+    flex: 1;
+    margin-right: 3em;
+    font-size: 1.2em;
+    
+}
+
+#products{
+    
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.productHolder{
+    
+    width: 14em;
+    font-family: raleway;
+    margin: 0 1em 2em 0;
+    cursor: pointer;
+    padding: 0 0 .5em 0;
+    
+}
+
+.productHolder:hover .productText{
+    
+    color: rgba(0,0,0,1)
+    
+}
+
+.productHolder .img{
+    
+    height: 14em;
+    background-color: rgba(0,0,0,0.02);
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+    
+}
+
+.productText{
+    
+     color: rgba(0,0,0,.7)
+    
+}
+
+.productText h1{
+    
+    margin: 1em 0 0 0;
+    font-size: 1em;
+    
+}
+
+.productText h2{
+    
+    margin: .1em 0;
+    font-size: 1em;
+    
+}
+
+#loader{
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%)
+    
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'good times';
+    font-weight: 400;
+    src: url(./good_times.ttf);
+}
+
+
+
+
+
